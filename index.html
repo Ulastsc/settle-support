@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Settle Support</title>
+<style>
+html{box-sizing:border-box} body{margin:0}
+/* Layout: single reading column, game's palette; two anchored sections (privacy, support) with EN then TR. */
+:root {
+  --bg: #e9ecf1; --card: #f6f7f9; --ink: #1d2230; --muted: #5c6477; --line: #d6dae2;
+  --teal: #2a9d8f; --amber: #e9a23b; --violet: #7a5bd6; --rose: #d9547a;
+  --sans: -apple-system, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #14171d; --card: #1e222b; --ink: #eef0f4; --muted: #9aa2b3; --line: #2b303b;
+    --teal: #3fbcae; --amber: #f0b04f; --violet: #9b80ee; --rose: #ec6d93; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --bg: #14171d; --card: #1e222b; --ink: #eef0f4; --muted: #9aa2b3; --line: #2b303b;
+  --teal: #3fbcae; --amber: #f0b04f; --violet: #9b80ee; --rose: #ec6d93; color-scheme: dark; }
+body { background: var(--bg); color: var(--ink); font: 16px/1.6 var(--sans); }
+.wrap { max-width: 680px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 64px; }
+.tiles { display: flex; gap: 6px; margin-bottom: 14px; }
+.tiles i { width: 14px; height: 14px; border-radius: 4px; display: block; }
+h1 { font-size: 34px; line-height: 1.1; letter-spacing: -0.02em; margin: 0; }
+.lede { color: var(--muted); margin: 8px 0 20px; }
+nav { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 28px; }
+nav a { color: var(--ink); text-decoration: none; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; font-size: 14px; }
+section { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px 22px 8px; margin-bottom: 20px; }
+h2 { font-size: 24px; margin: 0 0 4px; letter-spacing: -0.01em; }
+h3 { font-size: 16px; margin: 20px 0 4px; }
+.date { color: var(--muted); font-size: 14px; margin: 0 0 8px; }
+p, li { margin: 6px 0; }
+ul { padding-left: 20px; }
+a { color: var(--teal); }
+.tr { border-top: 1px solid var(--line); margin-top: 20px; padding-top: 6px; }
+.mail { font-weight: 600; user-select: all; }
+</style>
+
+<div class="wrap">
+  <div class="tiles"><i style="background:var(--teal)"></i><i style="background:var(--amber)"></i><i style="background:var(--violet)"></i><i style="background:var(--rose)"></i></div>
+  <h1>Settle · Kaydır</h1>
+  <p class="lede">A one-swipe color puzzle for iPhone, by Ulaş Taşçıoğlu.</p>
+  <nav><a href="#privacy">Privacy Policy</a><a href="#support">Support</a></nav>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p class="date">Last updated: October 29, 2026</p>
+
+    <h3>What the game itself collects</h3>
+    <p>Nothing. The game has no accounts, no sign-in and no servers of its own. Your level progress, stars and sound setting are stored only on your device and are deleted when you delete the app.</p>
+
+    <h3>Advertising (Google AdMob)</h3>
+    <p>The game is free and shows ads through Google AdMob. To show and measure ads, Google may collect and process:</p>
+    <ul>
+      <li>your device's advertising identifier (only if you allow tracking in the iOS prompt),</li>
+      <li>device and app information (model, OS version, language, app version),</li>
+      <li>approximate location derived from your IP address,</li>
+      <li>ad interaction data (which ads were shown and tapped),</li>
+      <li>crash and performance diagnostics of the ad SDK.</li>
+    </ul>
+    <p>How Google uses this data: <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></p>
+
+    <h3>Your choices</h3>
+    <ul>
+      <li><strong>Tracking:</strong> iOS asks whether the game may track you. If you choose <em>Ask App Not to Track</em>, ads are not personalised with your advertising identifier. Change it any time in Settings › Privacy &amp; Security › Tracking.</li>
+      <li><strong>Consent (EEA, UK, Switzerland):</strong> a consent form from Google's User Messaging Platform lets you accept or refuse personalised ads.</li>
+      <li>You can play every part of the game whatever you choose.</li>
+    </ul>
+
+    <h3>Children</h3>
+    <p>The game is not directed at children under 13 and we do not knowingly collect personal data from them.</p>
+
+    <h3>Changes and contact</h3>
+    <p>If this policy changes, the new version will be published here with a new date. Questions: <span class="mail">ulstsc00@gmail.com</span></p>
+
+    <div class="tr" lang="tr">
+      <h3>Gizlilik Politikası (Türkçe)</h3>
+      <p><strong>Oyunun kendisi hiçbir veri toplamaz.</strong> Hesap, giriş ya da sunucu yoktur. Bölüm ilerlemesi, yıldızlar ve ses ayarı yalnızca cihazında saklanır ve uygulamayı silince silinir.</p>
+      <p><strong>Reklamlar (Google AdMob):</strong> Oyun ücretsizdir ve Google AdMob üzerinden reklam gösterir. Google; reklam kimliğini (yalnızca iOS izin penceresinde takibe izin verirsen), cihaz ve uygulama bilgilerini, IP adresinden çıkarılan yaklaşık konumu, reklam etkileşimlerini ve reklam SDK'sının hata/performans verilerini işleyebilir.</p>
+      <p><strong>Seçimlerin:</strong> iOS izin penceresinde "Takip Etmemesini İste"yi seçebilir, bunu Ayarlar › Gizlilik ve Güvenlik › Takip bölümünden değiştirebilirsin. AB, Birleşik Krallık ve İsviçre'de Google'ın izin formu kişiselleştirilmiş reklamları kabul ya da reddetmeni sağlar. Seçimin ne olursa olsun oyunun tamamını oynayabilirsin.</p>
+      <p><strong>Çocuklar:</strong> Oyun 13 yaş altına yönelik değildir. <strong>İletişim:</strong> <span class="mail">ulstsc00@gmail.com</span></p>
+    </div>
+  </section>
+
+  <section id="support">
+    <h2>Support</h2>
+    <h3>How to play</h3>
+    <p>Swipe in any direction and every tile slides together until it hits a wall, the board's edge or another tile. Settle each tile on a ring of its own color, all at once. The par is the fewest moves possible; match it for three stars.</p>
+    <h3>Stuck?</h3>
+    <p>Tap <em>Hint</em> to see the best next move. Each level gives you one free hint, and you can watch an optional ad for more. Undo and Restart are always free.</p>
+    <h3>Daily puzzle</h3>
+    <p>The <em>Daily</em> tab has one puzzle per day, the same for everyone. Solve it and tap <em>Share</em> to send your result without giving away the answer.</p>
+    <h3>Progress</h3>
+    <p>Progress is stored on your device only. Deleting the app deletes your progress.</p>
+    <h3>Contact</h3>
+    <p>Bug reports, ideas and questions: <span class="mail">ulstsc00@gmail.com</span></p>
+
+    <div class="tr" lang="tr">
+      <h3>Destek (Türkçe)</h3>
+      <p>Herhangi bir yöne kaydır; bütün taşlar bir engele çarpana kadar birlikte kayar. Her taşı kendi renginin halkasına, hepsini aynı anda oturt. Takılırsan <em>İpucu</em>'na dokun. Günlük bulmaca herkes için aynıdır. İlerlemen yalnızca cihazında saklanır. İletişim: <span class="mail">ulstsc00@gmail.com</span></p>
+    </div>
+  </section>
+</div>
+
+</html>
